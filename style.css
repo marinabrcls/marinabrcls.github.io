@@ -1,0 +1,97 @@
+
+        body {
+            font-family: "Source Sans Pro", serif;
+            font-size: 20px;
+            color: #555b6e;
+            background-color: #faf9f9;
+            margin: 3em;
+        }
+
+        h1 {
+            font-family: "Overpass", serif;
+            font-size: 80px;
+            color: #555b6e;
+        }
+
+        h2 {
+            font-family: "Overpass", serif;
+            font-size: 30px;
+            color: #89b0ae;   
+        } 
+
+        p {
+            padding-left: 1em;
+            padding-top: 0.5em;
+            padding-right: 1em;
+            line-height: 1.5em;
+        }
+
+
+        #header {
+            position: relative;
+            align-items: center;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            top: 0.5em;
+            width: 100%;
+            height: 15em;
+            background-color: #bee3db;
+        }
+
+        #content {
+            position: relative;
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin: 2em;
+        }
+
+
+        #profilepic {
+            border-radius: 100%;
+            width: 250px;
+        }
+
+        #pic {
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            padding: 20px;
+            float: left;
+        }
+
+        #name {
+            height: 300px;
+            padding: 50px;
+            float: right;;
+        }
+
+
+        .subtitle {
+            margin-top: 0.5em;
+            position:relative;
+            width: 100%;
+            top: 0.5em;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #navlinks {
+            width: 15%;
+            margin: 1em;
+        }
+
+        #info {
+            width: 40%;
+            margin: 1em;
+        }
+
+        .bigtext {
+            font-size: 24px;
+        }
+
+        .icons {
+            width: 50px;
+            border-radius: 100%;
+        }
