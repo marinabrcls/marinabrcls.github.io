@@ -71,3 +71,24 @@ p {
 .div-profile {
   margin-right: 13%;
 }
+
+.skills-title {
+  background-color: moccasin;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container {
+  align-content: space-around;
+  background-color: lightslategray;
+  display: flex;
+  height: 30vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background-color: lightpink;
+  height: 100px;
+  width: 100px;
+}
