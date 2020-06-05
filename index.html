@@ -1,68 +1,74 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Portfolio de Marina Barcelos</title>
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
-        <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <header>
-            <div class="picdiv">
-                <img src="imgs/av.png" alt="Foto de perfil de Marina Barcelos" class="profilepic">
-            </div>
-            <div id="name">
-                <h1>Marina Barcelos<br>de Oliveira</h1>
-            </div>
-        </div>
-    </header>
-    
-    <main id="content">
-        <nav id="navlinks">
-            <h2 class="subtitle">Índice</h2>
-            <ol>
-            <li><a href="#about-me">Quem sou eu?</a></li>
-            <li><a href="#find-me">Onde me encontrar?</a></li>
-            <li><a href="#skills">Habilidades e competências</a></li>
-            </ol>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Tera">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <title>Document</title>
+</head>
 
-        <div id="info">
-        <section>
-            <h2 class="subtitle" id=about-me>Quem sou eu?</h2>
-            <p><strong class="bigtext">Olá!</strong><br>
-            Meu nome é Marina Barcelos de Oliveira, tenho 29 anos, sou brasileira e natural de Florianópolis - SC, cidade na qual ainda resido. Atualmente, estudo na Trybe para me tornar uma <em>Desenvolvedora de Software FullStack</em>. Sou fascinada por design, entusiasta da tecnologia, apaixonada por confeitaria e viciada em séries.</p>
-        </section>
-
-        <section>
-            <h2 class="subtitle" id=skills>Habilidades e competências:</h2>
-            <ul>
-            <li>Unix/Linux</li>
-            <li>Shell Script</li>
-            <li>Git e GitHub</li>
-            <li>HTML e HTML5</li>
-            <li>CSS</li>
-            <li class="bigtext">Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Lightroom</li>
-            <li class="bigtext">Fotografia</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2 class="subtitle" id=find-me>Onde me encontrar?</h2>
-            <p>
-            <a href="mailto:barcelos.marina@gmail.com" target="_blank"><img src="imgs/emailicon.png" alt="Ícone do E-mail" class="icons"></a>
-            <a href="https://www.linkedin.com/in/marina-barcelos/" target="_blank"><img src="imgs/linkedinicon.png" alt="Ícone do LinkedIn" class="icons"></a>
-            <a href="https://github.com/marinabrcls/" target="_blank"><img src="imgs/githubicon.png" alt="Ícone do GitHub" class="icons"></a>
-            <a href="https://flickr.com/photos/marinabrcls/" target="_blank"><img src="imgs/flickricon.png" alt="Ícone do Flickr" class="icons"></a>
-            </p>           
-            
-        
-        </section>
+<body>
+  <header>
+    <nav class="header-nav">
+      <a href="#about-me">Sobre mim</a> &nbsp;|&nbsp; <a href="#skills">Habilidades</a> &nbsp;|&nbsp; <a href="#projects">Projetos</a> &nbsp;|&nbsp; <a href="#contact">Contato</a>
+    </nav>
+  </header>
+  <section id="hero" class="hero">
+    <div id="hero-name">
+      <h1>marina<br>barcelos</h1>
+      <h3>&nbsp;&nbsp;front-end developer | webdesigner</h3>
     </div>
-    </main>
-
+  </section>
+  <section id="about-me" class="about-me">
+    <div id="profile-pic" class="div-picprofile">
+      <img src="imgs/av.png" alt="Foto de perfil de Marina Barcelos" class="profile-pic">
+    </div>
+    <div id="description" class="div-profile">
+      <h2>Olá!</h2>
+      <p>Meu nome é Marina Barcelos de Oliveira, tenho 29 anos e resido em Florianópolis - SC, minha cidade natal.
+        Estudo na Trybe para me tornar uma <em>Desenvolvedora de Software FullStack</em>.
+        Sou fascinada por design, entusiasta da tecnologia, apaixonada por confeitaria e viciada em séries.</p>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="skills-title">
+      <h2>Habilidades</h2>
+    </div>
+    <div class="skills-container">
+      <div class="skill-item">Unix</div>
+      <div class="skill-item">HTML e HTML5</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Adobe Photoshop</div>
+      <div class="skill-item">Abobe Illustrator</div>
+      <div class="skill-item">Fotografia</div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="projects-title">
+      <h2>Projetos</h2>
+    </div>
+    <div class="projects-container">
+      <div class="projects-item">Projeto 1</div>
+      <div class="projects-item">Projeto 2</div>
+      <div class="projects-item">Projeto 3</div>
+      <div class="projects-item">Projeto 4</div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class ="contact-title">
+      <h2>Contato</h2>
+    </div>
+    <div class="social-media">
+      <h3>Redes sociais</h3>
+    </div>
+  </section>
+  <footer>
+    <small style="text-align: center;">Marina Barcelos de Oliveira | 2020 | barcelos.marina@gmail.com</small>
+  </footer>
 </body>
+
 </html>
