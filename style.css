@@ -11,14 +11,17 @@ a:hover {
 body {
   margin: 0;
   background-color: #F1E9DE;
+  font-family: Source Sans Pro;
 }
 
 h1 {
   font-size: 7em;
+  font-family: Lexend Tera;
 }
 
 h2 {
   font-size: 4em;
+  font-family: Lexend Tera;
 }
 
 h3 {
