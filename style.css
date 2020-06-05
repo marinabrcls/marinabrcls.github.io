@@ -53,7 +53,7 @@ p {
 
 .profile-pic {
   border-radius: 50%;
-  width: 250px;
+  width: 300px;
 }
 
 .about-me {
@@ -75,20 +75,51 @@ p {
 .skills-title {
   background-color: moccasin;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 15%;
 }
 
 .skills-container {
   align-content: space-around;
   background-color: lightslategray;
   display: flex;
-  height: 30vh;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 5%;
 }
 
 .skill-item {
   background-color: lightpink;
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
+  margin: 3%;
+}
+
+.projects-title {
+  background-color: rosybrown;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15%;
+}
+
+.projects-container {
+  align-content: space-around;
+  background-color: sienna;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.projects-item {
+  background-color: lightyellow;
+  height: 250px;
+  width: 250px;
+  margin: 3%;
+}
+
+.contact-title {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
 }
