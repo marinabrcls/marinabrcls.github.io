@@ -1,3 +1,5 @@
+/* ----- TAGS NATIVAS DO HTML ----- */
+
 a {
   color: black;
   opacity: 100%;
@@ -43,6 +45,8 @@ p {
   font-size: 1.5em;
 }
 
+/* ----- CLASSES ----- */
+
 .header-nav {
   background-color: #DAC4AF;
   display: flex;
@@ -51,7 +55,8 @@ p {
   letter-spacing: 0.2em;
   padding-right: 10%;
   padding-top: 1%;
-  position: top fixed;
+  position: fixed;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -59,7 +64,7 @@ p {
   align-items: center;
   background-color: #DAC4AF;
   display: flex;
-  height: 95vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -89,7 +94,7 @@ p {
   padding-right: 15%;
 }
 
-.skills-container {
+.skills-container, .projects-container {
   align-content: space-around;
   display: flex;
   justify-content: space-around;
@@ -97,7 +102,7 @@ p {
   padding: 5%;
 }
 
-.skill-item {
+.skill-item, .projects-item  {
   height: 250px;
   width: 250px;
   margin: 2%;
@@ -112,25 +117,15 @@ p {
   text-align: center;
 }
 
+.projects-item p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .projects-title {
   display: flex;
   justify-content: flex-start;
   padding-left: 15%;
-}
-
-.projects-container {
-  align-content: space-around;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 5%;
-}
-
-.projects-item {
-  background-color: #5D7486;
-  height: 250px;
-  width: 250px;
-  margin: 3%;
 }
 
 .contact-title {
@@ -154,4 +149,9 @@ p {
 .skill-img {
   max-width: 150px;
   max-height: 100px;
+}
+
+.projects-img {
+  max-width: 300px;
+  max-height: 300px;
 }
