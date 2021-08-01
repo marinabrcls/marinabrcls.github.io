@@ -1,0 +1,113 @@
+:root {
+    /* Color palette */
+    --bg-dark-gray:#3D403F;
+    --bg-light-gray: #D2D6D9;
+    --text-dark-gray: #262626;
+    --text-light-gray: #949AA6;
+    /* Animation settings */
+    --animate-duration: 15s;
+    --animate-delay: 5s;
+}
+
+body {
+    background-color: var(--bg-dark-gray);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+h3 {
+    color: var(--text-light-gray);
+    font-size: 18pt;
+    font-weight: 300;
+}
+
+h4 {
+    color: var(--text-dark-gray);
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+p {
+    font-size: 10pt;
+    padding-right: 1vw;
+}
+
+#footer {
+    background-color: var(--bg-dark-gray);
+    color: white;
+    padding: 10vh;
+    text-align: center;
+}
+
+#main {
+    background-color: var(--bg-light-gray);
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.center-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pics {
+    width: 600px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 2vw;
+    width: 600px;
+}
+
+.video-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.video-desktop {
+    height: auto;
+    max-width: 100%;
+}
+
+.video-mobile {
+    display: none;
+}
+
+/* RESPONSIVE RULES */
+
+/* Image size adjustments breakpoint */
+@media screen and (max-width: 500px) {
+    .pics, .profile {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .pics, .profile {
+        width: 450px;
+    }
+}
+
+/* Video switch breakpoint */
+@media screen and (max-width: 1090px) {
+    .video-mobile {
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .video-desktop {
+        display: none;
+    }
+
+}
