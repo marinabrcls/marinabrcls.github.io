@@ -4,11 +4,9 @@
     --bg-light-gray: #D2D6D9;
     --text-dark-gray: #262626;
     --text-light-gray: #949AA6;
-    /* Animation settings */
-    --animate-duration: 15s;
-    --animate-delay: 5s;
 }
 
+/* HTML TAGS */
 body {
     background-color: var(--bg-dark-gray);
     font-family: 'Rubik', sans-serif;
@@ -19,19 +17,17 @@ h3 {
     color: var(--text-light-gray);
     font-size: 18pt;
     font-weight: 300;
+    margin-bottom: 1vh;
 }
 
 h4 {
     color: var(--text-dark-gray);
     font-size: 12pt;
     font-weight: 300;
+    margin-top: 0;
 }
 
-p {
-    font-size: 10pt;
-    padding-right: 1vw;
-}
-
+/* IDS */
 #footer {
     background-color: var(--bg-dark-gray);
     color: white;
@@ -40,17 +36,29 @@ p {
 }
 
 #main {
-    background-color: var(--bg-light-gray);
     width: 100%;
     margin: auto;
     overflow: hidden;
+}
+
+/* CLASSES */
+.about {
+    padding: 22vh 12vw;
+}
+
+.about-text {
+    color: white;
+    font-size: 22pt;
+    font-weight: 300;
+    line-height: 2em;
 }
 
 .bold {
     font-weight: 700;
 }
 
-.center-wrapper {
+.wrapper {
+    background-color: var(--bg-light-gray);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -64,8 +72,15 @@ p {
 .profile {
     display: flex;
     flex-direction: column;
-    padding: 8vh 2vw;
+    padding: 10vh 2vw;
     width: 600px;
+}
+
+.profile-text {
+    font-size: 10pt;
+    line-height: 2em;
+    margin-top: 0;
+    padding-right: 1vw;
 }
 
 .video-container {
@@ -85,16 +100,34 @@ p {
 
 /* RESPONSIVE RULES */
 
-/* Image size adjustments breakpoint */
+/* Images and texts size adjustments breakpoint */
 @media screen and (max-width: 500px) {
+    #footer {
+        font-size: 10pt;
+    }
+
+    .about-text {
+        font-size: 12pt !important;
+    }
+
     .pics, .profile {
         max-width: 300px;
     }
+
+    .profile {
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+    }
+
+    .wrapper {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
 }
 
-@media screen and (max-width: 1320px) {
-    .pics, .profile {
-        width: 450px;
+@media screen and (max-width: 978px) {
+    .about-text {
+        font-size: 14pt;
     }
 }
 
@@ -109,5 +142,15 @@ p {
     .video-desktop {
         display: none;
     }
+}
 
+/* Images and texts size adjustments breakpoint */
+@media screen and (max-width: 1320px) {
+    .about-text {
+        font-size: 18pt;
+    }
+
+    .pics, .profile {
+        width: 450px;
+    }
 }
