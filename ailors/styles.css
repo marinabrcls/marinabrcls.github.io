@@ -1,3 +1,12 @@
+/*
+Theme Name: Ailors Wordpress Theme.
+Theme URI: https://ailors.com/
+Description: Theme created exclusively for Ailors.
+Version: 3.0
+Author: Marina Barcelos
+Author URI: https://marinabrcls.github.io/
+*/
+
 :root {
     /* Color palette */
     --bg-dark-gray:#3D403F;
@@ -48,7 +57,7 @@ h4 {
 
 .about-text {
     color: white;
-    font-size: 22pt;
+    font-size: 18pt;
     font-weight: 300;
     line-height: 2em;
 }
@@ -60,20 +69,31 @@ h4 {
 .wrapper {
     background-color: var(--bg-light-gray);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .pics {
-    width: 600px;
+    width: 410px;
+    height: 492px;
 }
 
 .profile {
     display: flex;
-    flex-direction: column;
-    padding: 10vh 2vw;
-    width: 600px;
+    flex-direction: row;
+    margin: 5vh auto;
+    width: 1000px;
+}
+
+.profile-pic {
+    margin: 0 2vw;
+}
+
+.profile-description {
+    margin: auto 2vw;
 }
 
 .profile-text {
@@ -91,7 +111,7 @@ h4 {
 
 .video-desktop {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .video-mobile {
@@ -100,8 +120,8 @@ h4 {
 
 /* RESPONSIVE RULES */
 
-/* Images and texts size adjustments breakpoint */
-@media screen and (max-width: 500px) {
+/* Mobile */
+@media screen and (max-width: 600px) {
     #footer {
         font-size: 10pt;
     }
@@ -111,32 +131,51 @@ h4 {
     }
 
     .pics, .profile {
-        max-width: 300px;
+        width: 300px;
+        height: auto;
     }
 
     .profile {
-        padding-top: 5vh;
-        padding-bottom: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-mobile {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+
+    .video-desktop {
+        display: none;
     }
 
     .wrapper {
-        padding-top: 8vh;
-        padding-bottom: 8vh;
-    }
-}
-
-@media screen and (max-width: 978px) {
-    .about-text {
-        font-size: 14pt;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
     }
 }
 
 /* Video switch breakpoint */
-@media screen and (max-width: 1090px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .about-text {
+        font-size: 14pt;
+    }
+
+    .pics, .profile {
+        width: 450px;
+        height: auto;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .video-mobile {
         display: inline-block;
         height: auto;
-        max-width: 100%;
+        width: 100%;
     }
 
     .video-desktop {
@@ -145,7 +184,7 @@ h4 {
 }
 
 /* Images and texts size adjustments breakpoint */
-@media screen and (max-width: 1320px) {
+/* @media screen and (min-width: 1091px) and (max-width: 1325px) {
     .about-text {
         font-size: 18pt;
     }
@@ -153,4 +192,4 @@ h4 {
     .pics, .profile {
         width: 450px;
     }
-}
+} */
